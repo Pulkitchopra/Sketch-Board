@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+    <div class="options-container">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="toolbox-container scale-tools ">
+
+        <img class="pencil" src="./icons/Pencil.svg"/>
+
+        <img class="eraser" src="./icons/Eraser.svg"/>
+        <img class="download" src="./icons/Download.svg"/>
+        <img class="upload" src="./icons/Upload.svg"/>
+        <img class="stickynote" src="./icons/StickyNote.svg"/>
+        <img class="redo" src="./icons/Redo.svg"/>
+
+        <img class="undo" src="./icons/Undo.svg"/>
+
+    </div>
+
+    <div class="pencil-tool">
+        <div class="pencil-width-tool">
+
+
+            <input type="range" class="pencil-width" min="2" max="10" value="3"  >
+
+        </div>
+        <div class="pencil-colour-tool">
+
+            <div class="black pencil-colour"></div>
+            <div class="red pencil-colour"></div>
+            <div class="blue pencil-colour"></div>
+        </div>
+    </div>
+    <div class="eraser-tool">
+
+
+        <input type="range" class="eraser-width" min="2" max="10" value="3">
+
+    </div>
+
+    <!-- <div class="sticky-container">
+        <div class="header">
+            <div class="minimize">
+
+            </div>
+            <div class="remove">
+
+            </div>
+        </div>
+        <div class="notes-container">
+            <textarea> 
+
+            </textarea>
+        </div>
+    </div> -->
+    <canvas> 
+
+        
+    </canvas>
+ 
+    <script src="https://kit.fontawesome.com/b5a88b34fc.js" crossorigin="anonymous"></script>
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous">
+    </script>
+
+<script>
+  
+  
+    let socket = io.connect('http://localhost:3000');
+    </script>
+
+
+<script src="tools.js"></script>
+
+ 
+    <script src="./canvas.js"></script>
+    
+</body>
+</html>
